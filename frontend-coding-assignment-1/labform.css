@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.form {
+    display: flex;
+    width: 90vw;
+    height: 80vh;
+    box-shadow: 0px 0px 5px lightblue;
+}
+
+.form-container button {
+    background-color: rgb(146, 47, 246);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+}
+
+.button-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.fields-container {
+    width: 50%;
+    padding: 20px;
+    overflow: scroll;
+}
+
+.form img {
+    width: 50%;
+    height: 100%;
+}
+
+.contact-details, .address-details {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dropdown-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.dropdown-container label {
+    font-weight: bold;
+}
+
+.dropdown-container select {
+    width: 50%;
+    margin-top: 10px;
+    padding: 8px;
+}
+
+.checkbox-container input, .radio-container input {
+    min-width: auto
+}
+
+input {
+    min-width: 43%;
+    background: 
+        linear-gradient(#000, #000) center bottom 5px /calc(100% - 10px) 2px no-repeat;
+    background-color: #fcfcfc;
+    border: none;
+    padding: 10px;
+}
+
+input:active {
+    border: none;
+}
+  

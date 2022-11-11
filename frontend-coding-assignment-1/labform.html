@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lat Test <Form></Form></title>
+    <link rel="stylesheet" type="text/css" href="labform.css">
+    <script src="labform.js"></script>
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <div class="form">
+                <div class="fields-container">
+                    <h3>1. Your Contact Details</h3>
+                    <div class="contact-details">
+                        <input type="text" placeholder="Full Name" required>
+                        <input type="text" placeholder="Patient Id if exists">
+                        <input type="text" placeholder="Contact Number" required>
+                        <input type="text" placeholder="Email" required>
+                    </div>
+                    <h3>2. Address</h3>
+                    <div class="address-details">
+                        <input type="text" placeholder="H No." required>
+                        <input type="text" placeholder="Street" required>
+                        <input type="text" placeholder="Area" required>
+                        <div class="dropdown-container">
+                            <label>District</label>
+                            <select name="district" id="district" value="">
+                                <option value="">Choose One</option>
+                                <option value="blr_urban">Bangalore Urban</option>
+                                <option value="blr_rural">Bangalore Rural</option>
+                                <option value="kadugodi">Kadugodi</option>
+                            </select>
+                        </div>
+                    </div>
+                    <h3>Choose your test type</h3>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="cbc" name="cbc" value="cbc">
+                        <label for="cbc"> CBC</label><br>
+                        <input type="checkbox" id="complete_urine" name="complete_urine" value="complete_urine">
+                        <label for="complete_urine"> Complete Urine</label><br>
+                        <input type="checkbox" id="lipid_profile" name="lipid_profile" value="lipid_profile">
+                        <label for="lipid_profile"> Lipid Profile</label><br><br>
+                        <input type="checkbox" id="tsh" name="tsh" value="tsh">
+                        <label for="tsh"> Thyroid Stimulating Hormone(TSH)</label><br><br>
+                        <input type="checkbox" id="glucose_test" name="glucose_test" value="glucose_test">
+                        <label for="glucose_test"> Glucose Test</label><br><br>
+                    </div>
+                    <h3>Do you want a hard copy of the report also?</h3>
+                    <div class="radio-container">
+                        <input type="radio" id="report-copy-yes" name="report-copy" value="yes" required>
+                        <label for="report-copy-yes">Yes</label><br>
+                        <input type="radio" id="report-copy-no" name="report-copy" value="no">
+                        <label for="report-copy-no">No</label><br>  
+                    </div>
+                    <h3> Select Your Comfortable Date and Time</h3>
+                    <div class="datetime-cotainer">
+                        <label for="birthday">Date:</label>
+                        <input type="date" id="date" name="date" required> <br>
+                        <label for="birthday">Time:</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                </div>
+                <img src="Images/Lab-Test/lab-test.jpg" alt="image3" width="100%" height="333">
+
+            </div>
+            <div class="button-container">
+                <button type="reset">
+                    Reset
+                </button>
+                <button type="submit" onclick="validateform()">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
